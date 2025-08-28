@@ -71,3 +71,4 @@ contactForm.addEventListener('submit', async (event) => {
     alert('Une erreur est survenue lors de l\'envoi du message.');
   }
 });
+
