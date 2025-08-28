@@ -49,10 +49,12 @@ body {
   width: 100%;
   padding: 20px 0;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(10px);
+  background: linear-gradient(90deg, #710149, #39068c, #2563eb);
+  backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   transition: var(--transition);
+  box-shadow: 0 0 15px rgba(37, 99, 235, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .floating-nav.scrolled {
@@ -75,6 +77,7 @@ body {
   font-weight: 700;
   color: var(--primary);
   text-decoration: none;
+
 }
 
 .nav-links {
@@ -83,7 +86,7 @@ body {
 }
 
 .nav-links a {
-  color: var(--dark);
+  color: #f8fafc;
   text-decoration: none;
   font-weight: 500;
   transition: var(--transition);
@@ -92,6 +95,7 @@ body {
 
 .nav-links a:hover {
   color: var(--primary);
+  text-shadow: 0 0 10px var(--accent-color);
 }
 
 .nav-links a::after {
@@ -727,7 +731,7 @@ section {
 
 /* Footer */
 .footer {
-  background: var(--darker);
+  background: linear-gradient(180deg, #012764, #250143);
   color: white;
   padding: 60px 0 30px;
 }
@@ -761,7 +765,8 @@ section {
 }
 
 .footer-links a:hover {
-  color: white;
+  color: var(--accent-color);
+   text-shadow: 0 0 8px var(--accent-color);
 }
 
 .footer-social {
@@ -783,8 +788,9 @@ section {
 }
 
 .footer-social a:hover {
-  background: var(--primary);
+  background: var(--accent-color);
   transform: translateY(-3px);
+  box-shadow: 0 0 15px 
 }
 
 .footer-bottom {
